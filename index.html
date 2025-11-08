@@ -1,72 +1,19 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Registrazione Acquisto Auto</title>
-    <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Benvenuto - Auto Vendita o Acquisto</title>
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="container">
-        <h1>Modulo di Registrazione Acquisto Auto</h1>
-        <form  method="POST">
-            <fieldset>
-                <legend>Informazioni Personali</legend>
-                <label for="nome">Nome *</label>
-                <input type="text" id="nome" name="nome" required placeholder="Il tuo nome" />
-
-                <label for="cognome">Cognome *</label>
-                <input type="text" id="cognome" name="cognome" required placeholder="Il tuo cognome" />
-
-                <label for="email">Email *</label>
-                <input type="email" id="email" name="email" required placeholder="esempio@email.com" />
-                    
-                <label for="telefono">Telefono</label>
-                <input type="tel" id="telefono" name="telefono" placeholder="Numero di telefono" />
-            </fieldset>
-
-            <fieldset>
-                <legend>Dettagli Acquisto Auto</legend>
-                <label for="modello">Modello Auto *</label>
-                <select id="modello" name="modello" required>
-                    <option value="" disabled selected>Seleziona un modello</option>
-                    <option value="utilitaria">Utilitaria</option>
-                    <option value="berlina">Berlina</option>
-                    <option value="suv">SUV</option>
-                    <option value="sportiva">Sportiva</option>
-                    <option value="elettrica">Elettrica</option>
-                </select>
-
-                <label for="colore">Colore Preferito</label>
-                <input type="color" id="colore" name="colore" value="#000000" />
-
-                <label for="data_acquisto">Data prevista di acquisto</label>
-                <input type="date" id="data_acquisto" name="data_acquisto" />
-            </fieldset>
-
-            <fieldset>
-                <legend>Opzioni Aggiuntive</legend>
-                <label>
-                  <input type="checkbox" name="garanzia" />
-                  Garanzia Estesa
-                </label>
-                <label>
-                  <input type="checkbox" name="finanziamento" />
-                  Finanziamento
-                </label>
-                <label>
-                  <input type="checkbox" name="assicurazione" />
-                  Assicurazione inclusa
-                </label>
-            </fieldset>
-
-            <fieldset>
-                <label for="commenti">Note Aggiuntive</label>
-                <textarea id="commenti" name="commenti" rows="4" placeholder="Altre informazioni"></textarea>
-            </fieldset>
-
-            <button type="submit">Invia Registrazione</button>
-        </form>
-    </div>
+<div class="container home-container">
+  <h1>Benvenuto</h1>
+  <img src="https://www.mercedes-benz.it/content/dam/italy/passengercars/certified/certified2510/teaserOW_Cert25_range.jpg/1761922662976.jpg?im=Crop,rect=(0,0,800,800);Resize=(800,800)" alt="Auto" class="home-image" />
+  <div class="buttons">
+    <a href="vendita.html" class="btn">Propongo Vendita</a>
+    <a href="acquisto.html" class="btn">Voglio Acquistare</a>
+  </div>
+</div>
 </body>
 </html>
