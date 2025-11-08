@@ -86,6 +86,50 @@ button[type="submit"]:hover {
     background-color: #084372;
 }
 
+/* Contenitore flessibile e centrato */
+.container {
+    max-width: 600px;
+    width: 90%;
+    margin: 20px auto;
+    padding: 30px 40px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Font adattabili */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #f2f8ff;
+    margin: 0;
+    padding: 0 10px;
+}
+
+/* Regole responsive */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    .container {
+        padding: 20px;
+        width: 95%;
+    }
+
+    input, select, textarea, button {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 400px) {
+    button[type="submit"] {
+        width: 100%;
+        padding: 15px 0;
+        font-size: 1.2rem;
+    }
+}
+
 /* Responsive */
 @media(max-width: 600px) {
     .container {
