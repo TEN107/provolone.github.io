@@ -1,68 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form_verifica</title>
-    <link rel="stylesheet" href="Stile_FormVerifica.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Registrazione Acquisto Auto</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1> Registrazione Verifiche Studenti</h1>
+    <div class="container">
+        <h1>Modulo di Registrazione Acquisto Auto</h1>
+        <form action="https://formspree.io/f/tuo_id_form" method="POST">
+            <fieldset>
+                <legend>Informazioni Personali</legend>
+                <label for="nome">Nome *</label>
+                <input type="text" id="nome" name="nome" required placeholder="Il tuo nome" />
 
-    <img src="https://www.metadidattica.com/wp-content/uploads/2021/07/image-1-4-6.jpg" alt="Studente" class="immagine-centrata">
+                <label for="cognome">Cognome *</label>
+                <input type="text" id="cognome" name="cognome" required placeholder="Il tuo cognome" />
 
-	<form action="https://formspree.io/f/xanawoag" method="POST">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required placeholder="esempio@email.com" />
+                    
+                <label for="telefono">Telefono</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Numero di telefono" />
+            </fieldset>
 
-		<fieldset>
-			<legend> Verifiche Studenti </legend>
+            <fieldset>
+                <legend>Dettagli Acquisto Auto</legend>
+                <label for="modello">Modello Auto *</label>
+                <select id="modello" name="modello" required>
+                    <option value="" disabled selected>Seleziona un modello</option>
+                    <option value="utilitaria">Utilitaria</option>
+                    <option value="berlina">Berlina</option>
+                    <option value="suv">SUV</option>
+                    <option value="sportiva">Sportiva</option>
+                    <option value="elettrica">Elettrica</option>
+                </select>
 
-			<label for="nome">Nome : </label> <br>
-			<input type="text" id="nome" name="nome" required> <br><br>
+                <label for="colore">Colore Preferito</label>
+                <input type="color" id="colore" name="colore" value="#000000" />
 
-			<label for="cognome">Cognome : </label> <br>
-			<input type="text" id="cognome" name="cognome" required> <br><br>
+                <label for="data_acquisto">Data prevista di acquisto</label>
+                <input type="date" id="data_acquisto" name="data_acquisto" />
+            </fieldset>
 
-            <label> Sesso : </label> <br>
-			<select name="sesso" id="sesso" required> 
-				<option value="maschio">Maschio</option>
-				<option value="femmina">Femmina</option>
-				<option value="Altro">Altro</option>
-			</select> <br><br>
+            <fieldset>
+                <legend>Opzioni Aggiuntive</legend>
+                <label>
+                  <input type="checkbox" name="garanzia" />
+                  Garanzia Estesa
+                </label>
+                <label>
+                  <input type="checkbox" name="finanziamento" />
+                  Finanziamento
+                </label>
+                <label>
+                  <input type="checkbox" name="assicurazione" />
+                  Assicurazione inclusa
+                </label>
+            </fieldset>
 
-			<label for="data"> Data : </label> <br>
-			<input type="date" id="data" name="data" required> <br><br>
+            <fieldset>
+                <label for="commenti">Note Aggiuntive</label>
+                <textarea id="commenti" name="commenti" rows="4" placeholder="Altre informazioni"></textarea>
+            </fieldset>
 
-            <label> Materia : </label> <br>
-			<select name="materia" id="materia" required> 
-				<option value="matematica">Matematica</option>
-				<option value="italiano">italiano</option>
-				<option value="TPSIT"> TPSIT </option>
-				<option value="informatica">informatica</option>
-				<option value="religone">religone</option>
-				<option value="storia">storia</option>
-			</select> <br><br>
-
-            <label for="voto">Voto : </label> <br>
-			<input type="number" id="voto" name="voto" min="2" max="10" step="0.5" required> <br><br>
-
-		</fieldset>
-
-		<fieldset>
-			<legend> Autenticazione Dell'Utente </legend>
-
-            <label for="username"> Username : </label> <br> 
-            <input type="text" id="username" name="username" required> <br><br>
-
-            <label for="password"> Password : </label> <br>
-            <input type="password" id="password" name="password" required pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[\x24\x26\x40])[^\*\x2F\x23].{10,}"> <br><br>
-
-		</fieldset>
-
-        <input type="submit" id="invio" name="invio">
-		<input type="reset" id="resetta" name="resetta">
-
-	</form>
-
-
+            <button type="submit">Invia Registrazione</button>
+        </form>
+    </div>
 </body>
 </html>
