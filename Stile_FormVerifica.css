@@ -1,0 +1,100 @@
+/* === STILE GENERALE DELLA PAGINA === */
+body {
+  font-family: Arial, sans-serif;       /* Font principale della pagina */
+  background-color: #f5f5f5;            /* Sfondo grigio chiaro */
+  margin: 0;                            /* Rimuove margine predefinito */
+  padding: 0;                           /* Rimuove padding predefinito */
+  display: flex;                        /* Usa Flexbox per allineare gli elementi */
+  flex-direction: column;               /* Dispone gli elementi in colonna (uno sotto l’altro) */
+  align-items: center;                  /* Centra tutto orizzontalmente */
+  justify-content: flex-start;          /* Allinea dall’alto verso il basso */
+  min-height: 100vh;                    /* Occupa tutta l’altezza della finestra */
+  padding-top: 10px;                    /* Spazio sopra al titolo */
+}
+
+/* === TITOLO PRINCIPALE === */
+h1 {
+  text-align: center;                   /* Centra il testo */
+  color: #0077cc;                       /* Blu principale */
+  margin-bottom: 40px;                  /* Spazio sotto il titolo */
+}
+
+/* === IMMAGINE CENTRATA === */
+.immagine-centrata {
+  display: block;                         /* Permette di centrarla con margin auto */
+  margin: 0 auto 40px auto;               /* Centra e aggiunge spazio sotto */
+  width: 300px;                           /* Larghezza fissa (modificabile) */
+  height: auto;                           /* Mantiene le proporzioni */
+  border-radius: 20px;                    /* Smussa gli angoli */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Ombra morbida e naturale */
+}
+
+/* === FORM === */
+form {
+  width: 420px;                         /* Larghezza del form */
+  background-color: #ffffff;            /* Sfondo bianco */
+  padding: 25px;                        /* Spazio interno */
+  border-radius: 12px;                  /* Angoli smussati */
+  box-shadow: 0 0 15px rgba(0,0,0,0.1); /* Ombra più visibile */
+  text-align: left;                     /* Allinea il contenuto a sinistra */
+  margin-bottom: 40px;                  /* Spazio in fondo */
+}
+
+/* === FIELDSET === */
+fieldset {
+  border: 1px solid #ccc;               /* Bordo grigio chiaro */
+  border-radius: 8px;                   /* Angoli arrotondati */
+  padding: 15px;                        /* Spazio interno */
+  margin-bottom: 20px;                  /* Distanza tra sezioni */
+}
+
+/* === LEGENDA === */
+legend {
+  font-weight: bold;                    /* Grassetto */
+  color: #0077cc;                       /* Blu coerente col titolo */
+  padding: 0 8px;                       /* Spazio interno orizzontale */
+}
+
+/* === LABEL === */
+label {
+  font-weight: bold;                    /* Grassetto */
+  color: #333;                          /* Grigio scuro */
+}
+
+/* === INPUT E SELECT === */
+input, select {
+  width: 100%;                          /* Larghezza piena */
+  padding: 8px;                         /* Spazio interno */
+  margin-top: 5px;                      /* Spazio sopra */
+  border: 1px solid #ccc;               /* Bordo chiaro */
+  border-radius: 5px;                   /* Angoli arrotondati */
+  box-sizing: border-box;               /* Include padding e bordo nella larghezza */
+}
+
+/* === PULSANTI === */
+input[type="submit"],
+input[type="reset"] {
+  width: 48%;                           /* Due pulsanti affiancati */
+  padding: 10px;                        /* Spazio interno */
+  margin-top: 15px;                     /* Distanza sopra */
+  border: none;                         /* Nessun bordo */
+  border-radius: 6px;                   /* Angoli arrotondati */
+  cursor: pointer;                      /* Cursore cliccabile */
+  font-weight: bold;                    /* Testo in grassetto */
+  background-color: #0077cc;            /* Blu principale */
+  color: white;                         /* Testo bianco */
+  transition: background-color 0.3s;    /* Effetto graduale */
+}
+
+/* === PULSANTE RESET === */
+input[type="reset"] {
+  background-color: #888;               /* Grigio */
+}
+
+/* === EFFETTO HOVER === */
+input[type="submit"]:hover {
+  background-color: #005fa3;            /* Blu più scuro */
+}
+input[type="reset"]:hover {
+  background-color: #666;               /* Grigio più scuro */
+}
