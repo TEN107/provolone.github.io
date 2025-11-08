@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Richiesta di Acquisto Auto</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="container">
+  <h1>Richiesta di Acquisto</h1>
+  <form method="POST">
+    <label for="nome_a">Nome *</label>
+    <input id="nome_a" name="nome" type="text" required />
+    
+    <label for="cognome_a">Cognome *</label>
+    <input id="cognome_a" name="cognome" type="text" required />
+    
+    <label for="email_a">Email *</label>
+    <input id="email_a" name="email" type="email" required />
+
+    <label for="modello_a">Modello desiderato *</label>
+    <select id="modello_a" name="modello" required>
+      <option value="" disabled selected>Seleziona un modello</option>
+      <option value="classe-a">Mercedes Classe A</option>
+      <option value="classe-c">Mercedes Classe C</option>
+      <option value="glc">Mercedes GLC</option>
+      <option value="classe-s">Mercedes Classe S</option>
+    </select>
+
+    <label for="budget_a">Budget (€)</label>
+    <input id="budget_a" name="budget" type="number" min="0" step="500" />
+
+    <button type="submit">Invia Richiesta</button>
+  </form>
+</div>
+</body>
+</html>

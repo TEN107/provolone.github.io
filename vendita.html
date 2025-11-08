@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Proposta di Vendita Auto</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="container">
+  <h1>Proposta di Vendita</h1>
+  <form method="POST">
+    <label for="nome_v">Nome *</label>
+    <input id="nome_v" name="nome" type="text" required />
+    
+    <label for="cognome_v">Cognome *</label>
+    <input id="cognome_v" name="cognome" type="text" required />
+    
+    <label for="email_v">Email *</label>
+    <input id="email_v" name="email" type="email" required />
+
+    <label for="modello_v">Modello Auto *</label>
+    <input id="modello_v" name="modello" type="text" required />
+    
+    <label for="anno_v">Anno Produzione *</label>
+    <input id="anno_v" name="anno" type="number" min="1900" max="2025" required />
+    
+    <label for="prezzo_v">Prezzo offerto (€) *</label>
+    <input id="prezzo_v" name="prezzo" type="number" min="0" step="50" required />
+    
+    <button type="submit">Invia Proposta</button>
+  </form>
+</div>
+</body>
+</html>
